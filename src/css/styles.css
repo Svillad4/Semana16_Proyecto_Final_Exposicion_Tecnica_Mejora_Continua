@@ -1,0 +1,103 @@
+:root {
+  --verde-profundo: #135d32;
+  --verde-vivo: #198754;
+  --verde-suave: #eaf7ef;
+  --texto: #1f2937;
+}
+
+body {
+  color: var(--texto);
+  background: #ffffff;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  z-index: 9999;
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid var(--verde-profundo);
+}
+
+.skip-link:focus {
+  left: 8px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(19, 93, 50, 0.98), rgba(16, 132, 70, 0.9)), url('/src/assets/img/hero-placeholder.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card {
+  border-top: 6px solid #f7c948;
+}
+
+.section-padding {
+  padding: 4.5rem 0;
+}
+
+.section-title {
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--verde-profundo);
+}
+
+.info-card,
+.metric-card {
+  height: 100%;
+  border: 1px solid #d9eadf;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+}
+
+.info-card i {
+  font-size: 2rem;
+  color: var(--verde-vivo);
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.metric-card {
+  text-align: center;
+  background: var(--verde-suave);
+}
+
+.metric-card span {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--verde-profundo);
+  font-weight: 800;
+}
+
+.metric-card p {
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.card-mejora {
+  border-left: 6px solid var(--verde-vivo);
+}
+
+@media (max-width: 768px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .section-padding {
+    padding: 3rem 0;
+  }
+}

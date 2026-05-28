@@ -1,0 +1,56 @@
+{
+  "visitantes": [
+    {
+      "id": "v001",
+      "nombre": "Ana Perez",
+      "correo": "ana@example.com",
+      "telefono": "3001234567",
+      "interes": "Productos agricolas",
+      "comentario": "Quiero conocer el catalogo de productos de la feria.",
+      "fecha": "2026-06-01T14:20:00.000Z"
+    },
+    {
+      "id": "v002",
+      "nombre": "Carlos Ruiz",
+      "correo": "carlos@example.com",
+      "telefono": "3119876543",
+      "interes": "Talleres comunitarios",
+      "comentario": "Me interesa participar en los talleres de tecnologia rural.",
+      "fecha": "2026-06-02T16:10:00.000Z"
+    }
+  ],
+  "mejoras": [
+    {
+      "id": "m001",
+      "titulo": "Agregar autenticacion",
+      "area": "Seguridad",
+      "prioridad": "Alta",
+      "descripcion": "Crear un inicio de sesion para proteger registros administrativos.",
+      "estado": "Propuesta"
+    },
+    {
+      "id": "m002",
+      "titulo": "Exportar registros a CSV",
+      "area": "Funcionalidad",
+      "prioridad": "Media",
+      "descripcion": "Permitir descargar los registros para reportes de la feria.",
+      "estado": "Propuesta"
+    }
+  ],
+  "pruebas": [
+    {
+      "id": "p001",
+      "nombre": "Formulario con campos completos",
+      "tipo": "Funcional",
+      "resultado": "Aprobada",
+      "observacion": "El visitante se guarda correctamente en JSON Server."
+    },
+    {
+      "id": "p002",
+      "nombre": "Vista responsive",
+      "tipo": "Usabilidad",
+      "resultado": "Pendiente",
+      "observacion": "Tomar captura en modo celular y ajustar si es necesario."
+    }
+  ]
+}

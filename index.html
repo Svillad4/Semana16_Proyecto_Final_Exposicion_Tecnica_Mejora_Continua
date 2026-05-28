@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proyecto final Semana 16: exposicion tecnica, argumentacion de decisiones y mejora continua." />
+    <title>Semana 16 | Proyecto final para exposicion</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm" aria-label="Navegacion principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">
+          <i class="bi bi-flower1 me-2" aria-hidden="true"></i> Feria Rural Digital
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#registro">Registro</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#exposicion">Modo exposicion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mejora">Mejora continua</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="inicio" class="hero-section text-white">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="badge text-bg-light text-success mb-3">Semana 16 - Proyecto final</p>
+            <h1 class="display-5 fw-bold">Prepara, demuestra y defiende tu proyecto web final</h1>
+            <p class="lead mt-3">Esta version esta pensada para que ejecutes el proyecto, pruebes funciones, organices evidencias, argumentes decisiones tecnicas y propongas mejora continua.</p>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a href="#registro" class="btn btn-light btn-lg"><i class="bi bi-play-circle me-2" aria-hidden="true"></i> Probar funcionalidad</a>
+              <a href="#exposicion" class="btn btn-outline-light btn-lg"><i class="bi bi-easel me-2" aria-hidden="true"></i> Preparar exposicion</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-card bg-white text-dark rounded-4 shadow p-4">
+              <h2 class="h5 fw-bold">Objetivo de esta entrega</h2>
+              <p>Al terminar, debes tener un proyecto funcional, probado, documentado y listo para ser expuesto ante tus companeros o docente.</p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i> Proyecto ejecutable</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i> Evidencias organizadas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i> Argumentacion tecnica</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i> Plan de mejora continua</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="proyecto" class="section-padding">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="section-title">1. Comprende el proyecto que vas a exponer</h2>
+              <p>La Feria Rural Digital es un sitio web que simula una solucion para registrar visitantes interesados en productos, talleres y actividades comunitarias. Usa una base local simulada con JSON Server.</p>
+              <p>Tu trabajo consiste en dejarlo listo para una exposicion tecnica: comprobar que funcione, registrar evidencias, corregir detalles y explicar tus decisiones.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-md-6"><div class="info-card"><i class="bi bi-code-slash"></i><h3>Frontend</h3><p>HTML, CSS, JavaScript y Vite.</p></div></div>
+                <div class="col-md-6"><div class="info-card"><i class="bi bi-database"></i><h3>Datos</h3><p>JSON Server como base simulada.</p></div></div>
+                <div class="col-md-6"><div class="info-card"><i class="bi bi-ui-checks-grid"></i><h3>Interfaz</h3><p>Bootstrap, iconos y componentes responsive.</p></div></div>
+                <div class="col-md-6"><div class="info-card"><i class="bi bi-bar-chart"></i><h3>Analisis</h3><p>Chart.js para visualizar resultados.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="registro" class="section-padding bg-light">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <h2 class="section-title">2. Prueba el registro de visitantes</h2>
+              <p>Completa el formulario y revisa si los datos se guardan correctamente en JSON Server. Luego toma evidencias para tu entrega final.</p>
+              <form id="formVisitante" class="card shadow-sm border-0 p-4" novalidate>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ejemplo: Laura Gomez" autocomplete="name" />
+                  <div class="invalid-feedback" id="error-nombre"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="correo" class="form-label">Correo electronico</label>
+                  <input type="email" class="form-control" id="correo" name="correo" placeholder="correo@ejemplo.com" autocomplete="email" />
+                  <div class="invalid-feedback" id="error-correo"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Telefono</label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="3001234567" autocomplete="tel" />
+                  <div class="invalid-feedback" id="error-telefono"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="interes" class="form-label">Interes principal</label>
+                  <select id="interes" name="interes" class="form-select">
+                    <option value="">Selecciona una opcion</option>
+                    <option>Productos agricolas</option>
+                    <option>Talleres comunitarios</option>
+                    <option>Emprendimientos escolares</option>
+                    <option>Actividades culturales</option>
+                  </select>
+                  <div class="invalid-feedback" id="error-interes"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="comentario" class="form-label">Comentario</label>
+                  <textarea id="comentario" name="comentario" class="form-control" rows="3" placeholder="Escribe un comentario de minimo 10 caracteres"></textarea>
+                  <div class="invalid-feedback" id="error-comentario"></div>
+                </div>
+                <button class="btn btn-success w-100" type="submit"><i class="bi bi-save me-2" aria-hidden="true"></i> Guardar visitante</button>
+              </form>
+            </div>
+            <div class="col-lg-7">
+              <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                <h3 class="h4 mb-0">Registros guardados</h3>
+                <button id="btnRecargar" class="btn btn-outline-success btn-sm"><i class="bi bi-arrow-clockwise me-1" aria-hidden="true"></i> Recargar</button>
+              </div>
+              <div class="table-responsive card shadow-sm border-0">
+                <table class="table table-hover align-middle mb-0">
+                  <caption class="visually-hidden">Tabla de visitantes registrados</caption>
+                  <thead class="table-success">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Interes</th>
+                      <th>Correo</th>
+                      <th>Accion</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaVisitantes"></tbody>
+                </table>
+              </div>
+              <p class="small text-muted mt-3">Evidencia sugerida: captura de esta tabla despues de registrar un visitante nuevo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboard" class="section-padding">
+        <div class="container">
+          <h2 class="section-title">3. Analiza resultados para tu exposicion</h2>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4"><div class="metric-card"><span id="totalVisitantes">0</span><p>Visitantes registrados</p></div></div>
+            <div class="col-md-4"><div class="metric-card"><span id="totalMejoras">0</span><p>Mejoras propuestas</p></div></div>
+            <div class="col-md-4"><div class="metric-card"><span id="totalPruebas">0</span><p>Pruebas documentadas</p></div></div>
+          </div>
+          <div class="card border-0 shadow-sm p-4">
+            <h3 class="h5">Intereses registrados</h3>
+            <p class="text-muted">Este grafico te ayuda a explicar los datos recolectados durante la demostracion.</p>
+            <canvas id="graficoIntereses" height="120" aria-label="Grafico de intereses registrados" role="img"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="exposicion" class="section-padding bg-light">
+        <div class="container">
+          <h2 class="section-title">4. Modo exposicion</h2>
+          <p>Usa esta seccion como entrenamiento para tu presentacion final. No memorices todo: comprende cada punto y prepara evidencias.</p>
+          <div class="accordion" id="accordionExposicion">
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp1">Inicio de la exposicion</button></h3>
+              <div id="exp1" class="accordion-collapse collapse show" data-bs-parent="#accordionExposicion"><div class="accordion-body">Presenta el nombre del proyecto, el problema que resuelve y para quien fue creado.</div></div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp2">Demostracion funcional</button></h3>
+              <div id="exp2" class="accordion-collapse collapse" data-bs-parent="#accordionExposicion"><div class="accordion-body">Muestra el formulario, guarda un registro, revisa la tabla y abre JSON Server para demostrar que los datos existen.</div></div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp3">Argumentacion tecnica</button></h3>
+              <div id="exp3" class="accordion-collapse collapse" data-bs-parent="#accordionExposicion"><div class="accordion-body">Explica por que usaste Vite, JSON Server, Bootstrap, SweetAlert2 y Chart.js. Relaciona cada herramienta con una necesidad del proyecto.</div></div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp4">Mejora continua</button></h3>
+              <div id="exp4" class="accordion-collapse collapse" data-bs-parent="#accordionExposicion"><div class="accordion-body">Presenta al menos tres mejoras futuras con prioridad, razon tecnica y posible forma de implementacion.</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mejora" class="section-padding">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <h2 class="section-title">5. Propone mejora continua</h2>
+              <p>Registra una mejora futura. Esto te servira para explicar que tu proyecto puede evolucionar despues de la entrega.</p>
+              <form id="formMejora" class="card shadow-sm border-0 p-4" novalidate>
+                <div class="mb-3">
+                  <label for="tituloMejora" class="form-label">Titulo de la mejora</label>
+                  <input id="tituloMejora" name="titulo" class="form-control" placeholder="Ejemplo: Agregar login" />
+                  <div class="invalid-feedback" id="error-tituloMejora"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="areaMejora" class="form-label">Area</label>
+                  <select id="areaMejora" name="area" class="form-select">
+                    <option value="">Selecciona</option>
+                    <option>Seguridad</option>
+                    <option>Usabilidad</option>
+                    <option>Accesibilidad</option>
+                    <option>Rendimiento</option>
+                    <option>Funcionalidad</option>
+                  </select>
+                  <div class="invalid-feedback" id="error-areaMejora"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="prioridadMejora" class="form-label">Prioridad</label>
+                  <select id="prioridadMejora" name="prioridad" class="form-select">
+                    <option>Alta</option>
+                    <option>Media</option>
+                    <option>Baja</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="descripcionMejora" class="form-label">Descripcion</label>
+                  <textarea id="descripcionMejora" name="descripcion" class="form-control" rows="3" placeholder="Explica que problema resuelve y como podria implementarse"></textarea>
+                  <div class="invalid-feedback" id="error-descripcionMejora"></div>
+                </div>
+                <button class="btn btn-outline-success w-100" type="submit"><i class="bi bi-lightbulb me-2" aria-hidden="true"></i> Guardar mejora</button>
+              </form>
+            </div>
+            <div class="col-lg-7">
+              <h3 class="h4">Plan de mejora registrado</h3>
+              <div id="listaMejoras" class="row g-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <p class="mb-0">Semana 16 - Proyecto final de exposicion tecnica</p>
+        <p class="mb-0">Recuerda completar README_ENTREGA.md y los documentos de la carpeta docs.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/app.js"></script>
+  </body>
+</html>
