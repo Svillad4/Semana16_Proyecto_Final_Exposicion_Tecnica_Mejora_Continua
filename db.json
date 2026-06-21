@@ -17,6 +17,15 @@
       "interes": "Talleres comunitarios",
       "comentario": "Me interesa participar en los talleres de tecnologia rural.",
       "fecha": "2026-06-02T16:10:00.000Z"
+    },
+    {
+      "id": "xeyCYJ1qLyQ",
+      "nombre": "laura gomez",
+      "correo": "lau1@gmail.com",
+      "telefono": "3009876789",
+      "interes": "Productos agricolas",
+      "comentario": "asombroso y genial",
+      "fecha": "2026-06-21T04:15:02.927Z"
     }
   ],
   "mejoras": [
@@ -52,5 +61,6 @@
       "resultado": "Pendiente",
       "observacion": "Tomar captura en modo celular y ajustar si es necesario."
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

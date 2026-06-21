@@ -26,8 +26,8 @@ export function validarVisitante(form) {
   }
 
   const telefonoLimpio = (data.telefono || '').replace(/\D/g, '');
-  if (telefonoLimpio.length < 10) {
-    errores.push(['telefono', 'El telefono debe tener minimo 10 digitos.']);
+  if (telefonoLimpio.length !== 10) {
+    errores.push(['telefono', 'El telefono debe tener exactamente 10 numeros.']);
   }
 
   if (!data.interes) {
